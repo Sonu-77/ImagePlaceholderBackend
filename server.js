@@ -10,7 +10,7 @@ app.get("/:width/:height/:bg/:color/:text", (req, res) => {
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">
       <rect width="100%" height="100%" fill="#${bg}" />
-      <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" font-size="20" font-weight="bold" font-family="Arial" fill="#${color}">
+      <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" font-size="20" font-weight="normal" font-family="Arial" fill="#${color}">
         ${text}
       </text>
     </svg>
